@@ -1,5 +1,5 @@
 public class camelCased{
-public static void main(String[] args){
+public void main(){
 System.out.print("Listen to Celldweller");
 }
 }
