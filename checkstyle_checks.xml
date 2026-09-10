@@ -10,6 +10,7 @@
 
   <property name="severity" value="warning"/>
 
+
   <property name="fileExtensions" value="java, properties, xml"/>
   <!-- Excludes all 'module-info.java' files              -->
   <!-- See https://checkstyle.org/filefilters/index.html -->
@@ -22,7 +23,9 @@
            default="checkstyle-suppressions.xml" />
     <property name="optional" value="true"/>
   </module>
-
+ <module name="FileTabCharacter">
+    <property name="eachLine" value="true"/>
+  </module>
   <module name="TreeWalker">
     <module name="OuterTypeFilename"/>
     <module name="IllegalTokenText">
