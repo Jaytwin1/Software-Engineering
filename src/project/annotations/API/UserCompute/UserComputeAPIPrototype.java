@@ -16,3 +16,4 @@ public class UserComputeAPIPrototype {
 
         return null; // Prototype methods return nothing
 }
+}
