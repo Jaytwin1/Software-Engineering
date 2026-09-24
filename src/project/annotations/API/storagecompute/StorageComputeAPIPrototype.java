@@ -13,6 +13,6 @@ public class StorageComputeAPIPrototype {
         // 3. Write results into request.getOutput()
         // 4. Return a response
 
-        return null; // Prototype methods return nothing meaningful
+        return null; // Prototype methods return nothing 
     }
 }
