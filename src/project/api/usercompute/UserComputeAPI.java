@@ -1,4 +1,4 @@
-package project.annotations.api.usercompute;
+package project.api.usercompute;
 import project.annotations.NetworkAPI;
 @NetworkAPI
 public interface UserComputeAPI {

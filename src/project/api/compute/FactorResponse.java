@@ -1,4 +1,4 @@
-package project.annotations.api.compute;
+package project.api.compute;
 
 public interface FactorResponse {
     FactorOutput getOutput();

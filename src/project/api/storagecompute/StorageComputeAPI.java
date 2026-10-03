@@ -1,4 +1,4 @@
-package project.annotations.api.storagecompute;
+package project.api.storagecompute;
 
 import project.annotations.ProcessAPI;
 

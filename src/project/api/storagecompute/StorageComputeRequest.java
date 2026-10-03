@@ -1,4 +1,4 @@
-package project.annotations.api.storagecompute;
+package project.api.storagecompute;
 
 public interface StorageComputeRequest {
     DataInput getInput();

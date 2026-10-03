@@ -1,4 +1,4 @@
-package project.annotations.api.usercompute;
+package project.api.usercompute;
 
 public interface UserComputeRequest {
     InputSource getSource();
