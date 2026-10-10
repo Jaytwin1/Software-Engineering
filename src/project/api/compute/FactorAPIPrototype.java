@@ -15,4 +15,8 @@ public class FactorAPIPrototype {
 
         return null; // Prototype returns nothing
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Checkpoint3
