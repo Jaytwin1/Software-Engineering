@@ -1,6 +1,8 @@
 package project.implementation.usercompute;
 
-import project.api.usercompute.*;
+import project.api.usercompute.UserComputeRequest;
+import project.api.usercompute.InputSource;
+import project.api.usercompute.OutputEnd;
 
 public class UserComputeRequestIm implements UserComputeRequest {
 

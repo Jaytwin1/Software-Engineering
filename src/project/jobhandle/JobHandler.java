@@ -1,12 +1,22 @@
 package project.jobhandle;
 
-import project.api.usercompute.*;
-import project.api.compute.*;
-import project.api.storagecompute.*;
-
-import project.implementation.usercompute.*;
-import project.implementation.compute.*;
-import project.implementation.storagecompute.*;
+import project.api.usercompute.UserComputeAPI;
+import project.api.usercompute.UserComputeRequest;
+import project.api.usercompute.UserComputeResponse;
+import project.api.compute.ComputeEngineAPI;
+import project.api.compute.ComputeJobRequest;
+import project.api.compute.ComputeJobResponse;
+import project.api.compute.ComputeInput;
+import project.api.storagecompute.StorageComputeAPI;
+import project.api.storagecompute.StorageComputeRequest;
+import project.api.storagecompute.StorageComputeResponse;
+import project.api.storagecompute.DataInput;
+import project.api.storagecompute.DataOutput;
+import project.implementation.compute.ComputeInputIm;
+import project.implementation.compute.ComputeJobRequestIm;
+import project.implementation.storagecompute.StorageComputeRequestIm;
+import project.implementation.storagecompute.DataInputIm;
+import project.implementation.storagecompute.DataOutputIm;
 
 public class JobHandler {
 
