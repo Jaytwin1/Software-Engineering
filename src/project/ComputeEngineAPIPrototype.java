@@ -1,4 +1,4 @@
-package project.api.compute;
+package project;
 
 import project.annotations.ConceptualAPIPrototype;
 import project.implementation.compute.ComputeJobResponseIm;

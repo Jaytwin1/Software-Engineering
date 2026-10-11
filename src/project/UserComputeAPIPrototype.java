@@ -1,4 +1,4 @@
-package project.api.usercompute;
+package project;
 
 import project.annotations.NetworkAPIPrototype;
 import project.implementation.usercompute.UserComputeResponseIm;

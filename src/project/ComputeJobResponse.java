@@ -1,4 +1,4 @@
-package project.api.compute;
+package project;
 
 public interface ComputeJobResponse {
     ComputeOutput getOutput();

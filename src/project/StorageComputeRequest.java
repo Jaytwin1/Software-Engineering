@@ -1,4 +1,4 @@
-package project.api.storagecompute;
+package project;
 
 public interface StorageComputeRequest {
     DataInput getInput();

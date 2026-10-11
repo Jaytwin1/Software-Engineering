@@ -1,4 +1,4 @@
-package project.api.usercompute;
+package project;
 
 public interface UserComputeResponse {
     boolean isSuccess();

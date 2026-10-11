@@ -1,4 +1,4 @@
-package project.api.storagecompute;
+package project;
 
 import project.annotations.ProcessAPIPrototype;
 import project.implementation.storagecompute.StorageComputeResponseIm;
