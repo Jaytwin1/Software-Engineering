@@ -4,7 +4,6 @@ import project.annotations.ProcessAPIPrototype;
 import project.implementation.storagecompute.StorageComputeResponseIm;
 public class StorageComputeAPIPrototype implements StorageComputeAPI {
 
-    @Override
     @ProcessAPIPrototype
     public StorageComputeResponse transfer(StorageComputeRequest request) {
 

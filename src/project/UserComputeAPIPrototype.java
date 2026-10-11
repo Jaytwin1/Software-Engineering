@@ -5,7 +5,7 @@ import project.implementation.usercompute.UserComputeResponseIm;
 
 public class UserComputeAPIPrototype implements UserComputeAPI {
 
-    @Override
+
     @NetworkAPIPrototype
     public UserComputeResponse process(UserComputeRequest request) {
 

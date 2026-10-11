@@ -6,7 +6,7 @@ import project.implementation.compute.ComputeOutputIm;
 
 public class ComputeEngineAPIPrototype implements ComputeEngineAPI {
 
-    @Override
+    
     @ConceptualAPIPrototype
     public ComputeJobResponse compute(ComputeJobRequest request) {
 
