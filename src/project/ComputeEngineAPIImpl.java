@@ -1,10 +1,5 @@
 package project;
 
-import project.api.compute.ComputeEngineAPI;
-import project.api.compute.ComputeJobRequest;
-import project.api.compute.ComputeJobResponse;
-import project.api.storagecompute.StorageComputeAPI;
-
 public class ComputeEngineAPIImpl implements ComputeEngineAPI {
 
     // Dependency (from your system design diagram)
