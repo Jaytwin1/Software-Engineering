@@ -5,7 +5,7 @@ import org.mockito.Mockito;
 import project.api.compute.ComputeEngineAPI;
 import project.api.compute.ComputeJobRequest;
 import project.api.storagecompute.StorageComputeAPI;
-class TestComputeEngineAPI {
+class SmokeComputeEngineAPI {
 
     @Test
     void smokeTest() {

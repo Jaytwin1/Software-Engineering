@@ -8,7 +8,7 @@ import project.api.storagecompute.StorageComputeAPI;
 
 
 
-class ComputeEngineIntegrationTest {
+class IntegrationTest {
 
     @Test
     void integrationTest() {

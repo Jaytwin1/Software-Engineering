@@ -14,7 +14,9 @@ public class ComputeEngineAPIPrototype implements ComputeEngineAPI {
         int[] input = request.getInput().getData();
 
         int sum = 0;
-        for (int n : input) sum += n;
+        for (int i = 0; i < input.length; i++) {
+            sum += input[i];
+        }
 
         ComputeOutputIm output = new ComputeOutputIm();
         output.setData(new int[]{sum});
