@@ -2,9 +2,6 @@ package project;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import project.api.storagecompute.StorageComputeAPI;
-import project.api.storagecompute.StorageComputeRequest;
-
 class SmokeStorageCompute {
 
     @Test

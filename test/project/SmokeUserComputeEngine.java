@@ -2,9 +2,6 @@ package project;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import project.api.usercompute.UserComputeAPI;
-import project.api.usercompute.UserComputeRequest;
-
 class SmokeUserComputeEngine{
 
     @Test
