@@ -1,4 +1,4 @@
-package project.checkpointtests;
+package checkpoints;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
