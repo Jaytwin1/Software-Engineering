@@ -1,17 +1,30 @@
 package project.api.compute;
 
 import project.annotations.ConceptualAPIPrototype;
+import project.implementation.compute.ComputeJobResponseIm;
+import project.implementation.compute.ComputeOutputIm;
 
-public class ComputeEngineAPIPrototype {
+public class ComputeEngineAPIPrototype implements ComputeEngineAPI {
 
+    @Override
     @ConceptualAPIPrototype
-    public ComputeJobResponse computePrototype(ComputeJobRequest request) {
+    public ComputeJobResponse compute(ComputeJobRequest request) {
 
-        // Prototype only:
-        // 1. Receive input from Job Manager
-        // 2. Perform computation (conceptually)
-        // 3. Return results wrapped in ComputeOutput
+        // Mock behavior: pretend compute engine sums the numbers
+        int[] input = request.getInput().getData();
 
-        return null; // Prototype methods return nothing 
-    }
+        int sum = 0;
+        for (int i = 0; i < input.length; i++) {
+            sum += input[i];
+        }
+
+        ComputeOutputIm output = new ComputeOutputIm();
+        output.setData(new int[]{sum});
+
+        return new ComputeJobResponseIm(
+                output,
+                true,
+                "Mock compute engine executed successfully."
+        );
+}
 }

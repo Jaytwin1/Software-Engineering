@@ -1,19 +1,21 @@
 package project.api.usercompute;
 
 import project.annotations.NetworkAPIPrototype;
+import project.implementation.usercompute.UserComputeResponseIm;
 
-public class UserComputeAPIPrototype {
+public class UserComputeAPIPrototype implements UserComputeAPI {
 
+    @Override
     @NetworkAPIPrototype
-    public UserComputeResponse processPrototype(UserComputeRequest request) {
+    public UserComputeResponse process(UserComputeRequest request) {
 
-        // Prototype behavior description only — no real implementation.
-        // 1. Read input from request.getSource()
-        // 2. If request.getDelimiter() is null/empty, use default delimiters
-        // 3. Format output using delimiter(s)
-        // 4. Write output to request.getDestination()
-        // 5. Return a success/failure response
+        // Mock behavior for prototype
+        int[] mockProcessed = new int[]{1, 2, 3};
 
-        return null; // Prototype methods return nothing
-}
+        return new UserComputeResponseIm(
+                true,
+                "Mock user compute processed successfully.",
+                mockProcessed
+        );
+    }
 }
