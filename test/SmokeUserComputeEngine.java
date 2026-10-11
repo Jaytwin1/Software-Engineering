@@ -4,7 +4,7 @@ import org.mockito.Mockito;
 import project.api.usercompute.UserComputeAPI;
 import project.api.usercompute.UserComputeRequest;
 
-class SmokeUserComputeAPI {
+class SmokeUserCompute{
 
     @Test
     void smokeTest() {
