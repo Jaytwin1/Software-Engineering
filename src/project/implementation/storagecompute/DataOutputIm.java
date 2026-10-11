@@ -1,6 +1,6 @@
 package project.implementation.storagecompute;
 
-import project.api.storagecompute.DataOutput;
+import project.DataOutput;
 
 public class DataOutputIm implements DataOutput {
 

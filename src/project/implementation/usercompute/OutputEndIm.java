@@ -1,6 +1,6 @@
 package project.implementation.usercompute;
 
-import project.api.usercompute.OutputEnd;
+import project.OutputEnd;
 
 public class OutputEndIm implements OutputEnd {
 

@@ -1,6 +1,6 @@
 package project.implementation.storagecompute;
 
-import project.api.storagecompute.StorageComputeResponse;
+import project.StorageComputeResponse;
 
 public class StorageComputeResponseIm implements StorageComputeResponse {
 

@@ -1,7 +1,7 @@
 package project.implementation.compute;
 
-import project.api.compute.ComputeJobRequest;
-import project.api.compute.ComputeInput;
+import project.ComputeInput;
+import project.ComputeJobRequest;
 
 public class ComputeJobRequestIm implements ComputeJobRequest {
 

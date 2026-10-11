@@ -1,8 +1,8 @@
 package project.implementation.storagecompute;
 
-import project.api.storagecompute.DataInput;
-import project.api.storagecompute.DataOutput;
-import project.api.storagecompute.StorageComputeRequest;
+import project.DataInput;
+import project.DataOutput;
+import project.StorageComputeRequest;
 
 public class StorageComputeRequestIm implements StorageComputeRequest {
 

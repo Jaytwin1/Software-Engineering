@@ -1,6 +1,6 @@
 package project.implementation.usercompute;
 
-import project.api.usercompute.InputSource;
+import project.InputSource;
 
 public class InputSourceIm implements InputSource {
 

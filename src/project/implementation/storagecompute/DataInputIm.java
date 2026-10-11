@@ -1,6 +1,6 @@
 package project.implementation.storagecompute;
 
-import project.api.storagecompute.DataInput;
+import project.DataInput;
 
 public class DataInputIm implements DataInput {
 

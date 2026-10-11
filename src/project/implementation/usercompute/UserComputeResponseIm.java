@@ -1,6 +1,6 @@
 package project.implementation.usercompute;
 
-import project.api.usercompute.UserComputeResponse;
+import project.UserComputeResponse;
 
 public class UserComputeResponseIm implements UserComputeResponse {
 

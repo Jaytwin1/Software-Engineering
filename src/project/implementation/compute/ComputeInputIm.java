@@ -1,6 +1,6 @@
 package project.implementation.compute;
 
-import project.api.compute.ComputeInput;
+import project.ComputeInput;
 
 public class ComputeInputIm implements ComputeInput {
 
