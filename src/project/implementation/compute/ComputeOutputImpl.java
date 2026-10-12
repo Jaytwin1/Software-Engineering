@@ -2,7 +2,7 @@ package project.implementation.compute;
 
 import project.api.compute.ComputeOutput;
 
-public class ComputeOutputIm implements ComputeOutput {
+public class ComputeOutputImpl implements ComputeOutput {
 
     private int[] data;
 

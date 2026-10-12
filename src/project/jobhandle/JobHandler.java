@@ -12,11 +12,11 @@ import project.api.storagecompute.StorageComputeRequest;
 import project.api.storagecompute.StorageComputeResponse;
 import project.api.storagecompute.DataInput;
 import project.api.storagecompute.DataOutput;
-import project.implementation.compute.ComputeInputIm;
-import project.implementation.compute.ComputeJobRequestIm;
-import project.implementation.storagecompute.StorageComputeRequestIm;
-import project.implementation.storagecompute.DataInputIm;
-import project.implementation.storagecompute.DataOutputIm;
+import project.implementation.compute.ComputeInputImpl;
+import project.implementation.compute.ComputeJobRequestImpl;
+import project.implementation.storagecompute.StorageComputeRequestImpl;
+import project.implementation.storagecompute.DataInputImpl;
+import project.implementation.storagecompute.DataOutputImpl;
 
 public class JobHandler {
 
@@ -43,8 +43,8 @@ public class JobHandler {
 
 
         // 2. COMPUTE ENGINE PHASE
-        ComputeInput computeInput = new ComputeInputIm(processedData);
-        ComputeJobRequest computeReq = new ComputeJobRequestIm(computeInput);
+        ComputeInput computeInput = new ComputeInputImpl(processedData);
+        ComputeJobRequest computeReq = new ComputeJobRequestImpl(computeInput);
 
         ComputeJobResponse computeResp = computeEngineAPI.compute(computeReq);
 
@@ -53,11 +53,11 @@ public class JobHandler {
 
 
         // 3. STORAGE COMPUTE PHASE
-        DataInput storageInput = new DataInputIm(computeOutputData);
-        DataOutput storageOutput = new DataOutputIm();
+        DataInput storageInput = new DataInputImpl(computeOutputData);
+        DataOutput storageOutput = new DataOutputImpl();
 
         StorageComputeRequest storageReq =
-                new StorageComputeRequestIm(storageInput, storageOutput);
+                new StorageComputeRequestImpl(storageInput, storageOutput);
 
         return storageComputeAPI.transfer(storageReq);
     }

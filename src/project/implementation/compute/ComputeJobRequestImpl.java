@@ -3,11 +3,11 @@ package project.implementation.compute;
 import project.api.compute.ComputeJobRequest;
 import project.api.compute.ComputeInput;
 
-public class ComputeJobRequestIm implements ComputeJobRequest {
+public class ComputeJobRequestImpl implements ComputeJobRequest {
 
     private final ComputeInput input;
 
-    public ComputeJobRequestIm(ComputeInput input) {
+    public ComputeJobRequestImpl(ComputeInput input) {
         this.input = input;
     }
 

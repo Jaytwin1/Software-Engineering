@@ -2,7 +2,7 @@ package project.implementation.storagecompute;
 
 import project.api.storagecompute.DataOutput;
 
-public class DataOutputIm implements DataOutput {
+public class DataOutputImpl implements DataOutput {
 
     private int[] data;
 

@@ -2,11 +2,11 @@ package project.implementation.compute;
 
 import project.api.compute.ComputeInput;
 
-public class ComputeInputIm implements ComputeInput {
+public class ComputeInputImpl implements ComputeInput {
 
     private final int[] data;
 
-    public ComputeInputIm(int[] data) {
+    public ComputeInputImpl(int[] data) {
         this.data = data;
     }
 

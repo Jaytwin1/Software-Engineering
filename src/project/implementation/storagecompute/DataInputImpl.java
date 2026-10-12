@@ -2,11 +2,11 @@ package project.implementation.storagecompute;
 
 import project.api.storagecompute.DataInput;
 
-public class DataInputIm implements DataInput {
+public class DataInputImpl implements DataInput {
 
     private final int[] data;
 
-    public DataInputIm(int[] data) {
+    public DataInputImpl(int[] data) {
         this.data = data;
     }
 

@@ -2,11 +2,11 @@ package project.implementation.usercompute;
 
 import project.api.usercompute.OutputEnd;
 
-public class OutputEndIm implements OutputEnd {
+public class OutputEndImpl implements OutputEnd {
 
     private final String identifier;
 
-    public OutputEndIm(String identifier) {
+    public OutputEndImpl(String identifier) {
         this.identifier = identifier;
     }
 

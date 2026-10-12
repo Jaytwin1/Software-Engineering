@@ -4,12 +4,12 @@ import project.api.storagecompute.DataInput;
 import project.api.storagecompute.DataOutput;
 import project.api.storagecompute.StorageComputeRequest;
 
-public class StorageComputeRequestIm implements StorageComputeRequest {
+public class StorageComputeRequestImpl implements StorageComputeRequest {
 
     private final DataInput input;
     private final DataOutput output;
 
-    public StorageComputeRequestIm(DataInput input, DataOutput output) {
+    public StorageComputeRequestImpl(DataInput input, DataOutput output) {
         this.input = input;
         this.output = output;
     }
