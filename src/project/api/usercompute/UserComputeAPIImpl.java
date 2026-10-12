@@ -1,6 +1,4 @@
-import project.api.usercompute.UserComputeAPI;
-import project.api.usercompute.UserComputeRequest;
-import project.api.usercompute.UserComputeResponse;
+package project.api.usercompute;
 
 public class UserComputeAPIImpl implements UserComputeAPI {
 

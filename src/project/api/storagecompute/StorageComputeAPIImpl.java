@@ -1,9 +1,4 @@
-package project;
-
-
-import project.api.storagecompute.StorageComputeAPI;
-import project.api.storagecompute.StorageComputeRequest;
-import project.api.storagecompute.StorageComputeResponse;
+package project.api.storagecompute;
 
 public class StorageComputeAPIImpl implements StorageComputeAPI {
 
