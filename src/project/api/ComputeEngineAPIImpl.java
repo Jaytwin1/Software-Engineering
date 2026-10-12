@@ -1,5 +1,8 @@
-package project.api.compute;
+package project.api;
 
+import project.api.compute.ComputeEngineAPI;
+import project.api.compute.ComputeJobRequest;
+import project.api.compute.ComputeJobResponse;
 import project.api.storagecompute.StorageComputeAPI;
 
 public class ComputeEngineAPIImpl implements ComputeEngineAPI {

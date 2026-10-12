@@ -1,5 +1,11 @@
-package project.api.storagecompute;
+package project.api;
 
+
+import project.annotations.ProcessAPI;
+import project.api.storagecompute.StorageComputeAPI;
+import project.api.storagecompute.StorageComputeRequest;
+import project.api.storagecompute.StorageComputeResponse;
+@ProcessAPI 
 public class StorageComputeAPIImpl implements StorageComputeAPI {
 
     public StorageComputeAPIImpl() { }
