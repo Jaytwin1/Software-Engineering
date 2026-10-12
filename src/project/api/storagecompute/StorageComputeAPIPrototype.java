@@ -1,23 +1,20 @@
 package project.api.storagecompute;
 
 import project.annotations.ProcessAPIPrototype;
-import project.implementation.storagecompute.StorageComputeResponseImpl;
+
 public class StorageComputeAPIPrototype implements StorageComputeAPI {
 
     @Override
     @ProcessAPIPrototype
     public StorageComputeResponse transfer(StorageComputeRequest request) {
 
-        // Mock behavior: pretend storage succeeded
-        int[] data = request.getInput().getData();
+        // Mock behavior for prototype
+        int[] mockResult = new int[]{10, 20, 30};
 
-        // Pretend we "stored" it by copying into output
-        request.getOutput().setData(data);
-
-        return new StorageComputeResponseImpl(
+        return new StorageComputeResponse(
                 true,
-                "Mock storage transfer completed successfully."
+                "Mock storage compute transfer completed successfully.",
+                mockResult
         );
-
     }
 }

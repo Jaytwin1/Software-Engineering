@@ -1,12 +1,12 @@
 package project;
-
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import project.api.compute.ComputeEngineAPI;
-import project.api.compute.ComputeJobRequest;
+import project.api.compute.ComputeEngineAPI.ComputeEngineRequest;
 import project.api.storagecompute.StorageComputeAPI;
 import project.implementation.compute.ComputeEngineAPIImpl;
+
 class SmokeComputeEngine {
 
     @Test
@@ -19,7 +19,7 @@ class SmokeComputeEngine {
         ComputeEngineAPIImpl api = new ComputeEngineAPIImpl(storageMock);
 
         // Mock request
-        ComputeJobRequest req = Mockito.mock(ComputeJobRequest.class);
+        ComputeEngineRequest req = Mockito.mock(ComputeEngineRequest.class);
 
         // Call method (returns null — expected for Checkpoint 3)
         api.compute(req);

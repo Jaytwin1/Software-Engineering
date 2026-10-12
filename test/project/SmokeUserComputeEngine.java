@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import project.api.usercompute.UserComputeAPI;
-import project.api.usercompute.UserComputeRequest;
+import project.api.usercompute.UserComputeAPI.UserComputeRequest;
+
 import project.implementation.usercompute.UserComputeAPIImpl;
 
 class SmokeUserComputeEngine{

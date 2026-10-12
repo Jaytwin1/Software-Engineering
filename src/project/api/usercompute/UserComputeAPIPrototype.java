@@ -1,7 +1,6 @@
 package project.api.usercompute;
 
 import project.annotations.NetworkAPIPrototype;
-import project.implementation.usercompute.UserComputeResponseImpl;
 
 public class UserComputeAPIPrototype implements UserComputeAPI {
 
@@ -12,10 +11,6 @@ public class UserComputeAPIPrototype implements UserComputeAPI {
         // Mock behavior for prototype
         int[] mockProcessed = new int[]{1, 2, 3};
 
-        return new UserComputeResponseImpl(
-                true,
-                "Mock user compute processed successfully.",
-                mockProcessed
-        );
+        return new UserComputeResponse(mockProcessed);
     }
 }
