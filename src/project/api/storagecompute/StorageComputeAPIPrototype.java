@@ -1,7 +1,7 @@
 package project.api.storagecompute;
 
 import project.annotations.ProcessAPIPrototype;
-import project.implementation.storagecompute.StorageComputeResponseIm;
+import project.implementation.storagecompute.StorageComputeResponseImpl;
 public class StorageComputeAPIPrototype implements StorageComputeAPI {
 
     @Override
@@ -14,7 +14,7 @@ public class StorageComputeAPIPrototype implements StorageComputeAPI {
         // Pretend we "stored" it by copying into output
         request.getOutput().setData(data);
 
-        return new StorageComputeResponseIm(
+        return new StorageComputeResponseImpl(
                 true,
                 "Mock storage transfer completed successfully."
         );

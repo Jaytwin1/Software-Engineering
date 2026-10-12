@@ -1,8 +1,8 @@
 package project.api.compute;
 
 import project.annotations.ConceptualAPIPrototype;
-import project.implementation.compute.ComputeJobResponseIm;
-import project.implementation.compute.ComputeOutputIm;
+import project.implementation.compute.ComputeJobResponseImpl;
+import project.implementation.compute.ComputeOutputImpl;
 
 public class ComputeEngineAPIPrototype implements ComputeEngineAPI {
 
@@ -18,10 +18,10 @@ public class ComputeEngineAPIPrototype implements ComputeEngineAPI {
             sum += input[i];
         }
 
-        ComputeOutputIm output = new ComputeOutputIm();
+        ComputeOutputImpl output = new ComputeOutputImpl();
         output.setData(new int[]{sum});
 
-        return new ComputeJobResponseIm(
+        return new ComputeJobResponseImpl(
                 output,
                 true,
                 "Mock compute engine executed successfully."
