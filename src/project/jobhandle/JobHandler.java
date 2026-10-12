@@ -1,22 +1,16 @@
 package project.jobhandle;
 
 import project.api.usercompute.UserComputeAPI;
-import project.api.usercompute.UserComputeRequest;
-import project.api.usercompute.UserComputeResponse;
+import project.api.usercompute.UserComputeAPI.UserComputeRequest;
+import project.api.usercompute.UserComputeAPI.UserComputeResponse;
+
 import project.api.compute.ComputeEngineAPI;
-import project.api.compute.ComputeJobRequest;
-import project.api.compute.ComputeJobResponse;
-import project.api.compute.ComputeInput;
+import project.api.compute.ComputeEngineAPI.ComputeEngineRequest;
+import project.api.compute.ComputeEngineAPI.ComputeEngineResponse;
+
 import project.api.storagecompute.StorageComputeAPI;
-import project.api.storagecompute.StorageComputeRequest;
-import project.api.storagecompute.StorageComputeResponse;
-import project.api.storagecompute.DataInput;
-import project.api.storagecompute.DataOutput;
-import project.implementation.compute.ComputeInputIm;
-import project.implementation.compute.ComputeJobRequestIm;
-import project.implementation.storagecompute.StorageComputeRequestIm;
-import project.implementation.storagecompute.DataInputIm;
-import project.implementation.storagecompute.DataOutputIm;
+import project.api.storagecompute.StorageComputeAPI.StorageComputeRequest;
+import project.api.storagecompute.StorageComputeAPI.StorageComputeResponse;
 
 public class JobHandler {
 
@@ -33,32 +27,20 @@ public class JobHandler {
         this.storageComputeAPI = storageComputeAPI;
     }
 
-    public StorageComputeResponse handleJob(UserComputeRequest userReq) {
+    public StorageComputeResponse handleJob(int[] rawData) {
 
         // 1. USER COMPUTE PHASE
+        UserComputeRequest userReq = new UserComputeRequest(rawData);
         UserComputeResponse userResp = userComputeAPI.process(userReq);
-
-        // Extract processed data (int[])
-        int[] processedData = userResp.getProcessedData();
-
+        int[] userProcessed = userResp.getResult();
 
         // 2. COMPUTE ENGINE PHASE
-        ComputeInput computeInput = new ComputeInputIm(processedData);
-        ComputeJobRequest computeReq = new ComputeJobRequestIm(computeInput);
-
-        ComputeJobResponse computeResp = computeEngineAPI.compute(computeReq);
-
-        // Extract compute output (int[])
-        int[] computeOutputData = computeResp.getOutput().getData();
-
+        ComputeEngineRequest computeReq = new ComputeEngineRequest(userProcessed);
+        ComputeEngineResponse computeResp = computeEngineAPI.compute(computeReq);
+        int[] engineProcessed = computeResp.getResult();
 
         // 3. STORAGE COMPUTE PHASE
-        DataInput storageInput = new DataInputIm(computeOutputData);
-        DataOutput storageOutput = new DataOutputIm();
-
-        StorageComputeRequest storageReq =
-                new StorageComputeRequestIm(storageInput, storageOutput);
-
+        StorageComputeRequest storageReq = new StorageComputeRequest(engineProcessed);
         return storageComputeAPI.transfer(storageReq);
     }
 }

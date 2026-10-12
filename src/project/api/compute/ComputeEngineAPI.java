@@ -1,10 +1,23 @@
 package project.api.compute;
 
-import project.annotations.ConceptualAPI;
+import project.annotations.ProcessAPI;
 
-@ConceptualAPI
+@ProcessAPI
 public interface ComputeEngineAPI {
 
-    ComputeJobResponse compute(ComputeJobRequest request);
+    ComputeEngineResponse compute(ComputeEngineRequest request);
 
+    // Nested request type
+    class ComputeEngineRequest {
+        private final int[] data;
+        public ComputeEngineRequest(int[] data) { this.data = data; }
+        public int[] getData() { return data; }
+    }
+
+    // Nested response type
+    class ComputeEngineResponse {
+        private final int[] result;
+        public ComputeEngineResponse(int[] result) { this.result = result; }
+        public int[] getResult() { return result; }
+    }
 }
